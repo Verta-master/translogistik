@@ -1,20 +1,59 @@
 .service {
   padding-top: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   background-color: @grey;
 }
 
 .service__wrap {
-  margin-top: 50px;
+  margin-bottom: 40px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 
 .service__img {
-  width: 500px;
+  width: 50%;
+  height: 380px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .service__block {
+  max-width: 700px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 30px;
+  text-align: center;
+}
+
+.service__list {
   width: 50%;
+  margin-top: 50px;
+  
+  li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+    
+    &::before {
+      content: "-";
+      position: absolute;
+      top: 2px;
+      left: 0;
+    }
+  }
+  
+  &:nth-child(2n) {
+    padding-left: 30px;
+    padding-right: 0;
+  }
 }
