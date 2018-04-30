@@ -1,6 +1,11 @@
 .auto {
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 70px;
+  
+  strong {
+    display: block;
+    margin-top: 50px;
+  }
 }
 
 .auto__center {
@@ -16,6 +21,8 @@
 .auto__item {
   margin-top: 30px;
   margin-left: 75px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -57,7 +64,61 @@
   width: 700px;
   
   p {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.auto__block {
+  margin-top: 100px;
+}
+
+.auto__wrap {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.auto__car {
+  width: 50%;
+  margin: 0;
+  padding-left: 70px;
+  padding-right: 30px;
+  position: relative;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/icon-car1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  &--2::before {
+    background-image: url(../img/icon-car2.svg);
+  }
+}
+
+.auto__list {
+  margin-top: 40px;
+  padding-left: 50px;
+  
+  li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+    
+    &::before {
+      content: "-";
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
 }
