@@ -1385,4 +1385,8 @@ label.order__text::after {
   .social img {
     width: 25px;
   }
+  .logo p {
+    font-size: 20px;
+    margin-left: 5px;
+  }
 }
