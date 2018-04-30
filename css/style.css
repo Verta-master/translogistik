@@ -650,6 +650,7 @@ button {
   font-size: 45px;
   font-weight: 700;
   color: #fff;
+  text-align: right;
 }
 .order {
   width: 370px;
@@ -858,13 +859,13 @@ label.order__text::after {
   margin-bottom: 100px;
   margin-left: auto;
   margin-right: auto;
-  padding-right: 30px;
   text-align: center;
   line-height: 1.5;
 }
 .service__list {
   width: 50%;
   margin-top: 50px;
+  padding-right: 30px;
 }
 .service__list li {
   margin-bottom: 10px;
@@ -1190,4 +1191,198 @@ label.order__text::after {
   background-image: url(../img/icon-wheel.svg);
   background-repeat: no-repeat;
   background-size: contain;
+}
+@media (max-width: 1180px) {
+  .wrapper {
+    width: 100%;
+  }
+  .promo__header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .contacts__info {
+    left: auto;
+    right: 20px;
+  }
+}
+@media (max-width: 1022px) {
+  .company__item {
+    padding: 0;
+  }
+  .service__block {
+    margin-bottom: 60px;
+  }
+  .service__list {
+    width: 60%;
+  }
+  .service__img {
+    width: 40%;
+    height: auto;
+    margin-top: 50px;
+  }
+  .service__wrap {
+    margin-bottom: 0;
+  }
+  .service {
+    padding-bottom: 50px;
+  }
+  .auto strong {
+    margin-top: 50px;
+  }
+  .auto__list {
+    padding-left: 0;
+  }
+  .auto__list::before {
+    left: auto;
+    right: 0;
+    opacity: 0.05;
+  }
+  .auto__car {
+    width: 60%;
+  }
+  .auto__car--2 {
+    width: 40%;
+    padding-right: 0;
+  }
+  .auto__info {
+    width: 70%;
+  }
+}
+@media (max-width: 766px) {
+  .menu__btn {
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background-image: url(../img/icon-menu-ham.svg);
+    background-repeat: no-repeat;
+    background-size: 30px 19px;
+    background-position: center;
+  }
+  .menu__list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+    background-color: #374046;
+  }
+  .menu {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .menu--opened .menu__btn {
+    background-image: url(../img/icon-menu-cross.svg);
+    background-size: 24px 24px;
+  }
+  .logo {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .promo__phone {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    z-index: 1001;
+    color: #fff;
+  }
+  .contacts__info {
+    position: static;
+    width: 100%;
+    -webkit-transform: none;
+            transform: none;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .contacts iframe {
+    height: 400px;
+  }
+  .order--send {
+    max-width: 100%;
+  }
+  .footer__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .auto__wrap {
+    display: block;
+  }
+  .auto__car--2,
+  .auto__car {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+  .service__img,
+  .auto__list::before {
+    display: none;
+  }
+  .service__wrap {
+    display: block;
+  }
+  .service__list {
+    width: 100%;
+    padding-right: 0;
+  }
+  .service__list:nth-child(2n) {
+    padding-left: 0;
+    margin-top: 0;
+  }
+  .company__item {
+    width: 45%;
+  }
+}
+@media (max-width: 480px) {
+  .title-main {
+    font-size: 30px;
+    text-align: left;
+  }
+  .order {
+    width: 100%;
+    padding: 20px;
+  }
+  .title {
+    font-size: 26px;
+  }
+  .company__item {
+    width: 100%;
+  }
+  .auto__item:nth-child(2n),
+  .auto__item {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 105px;
+    padding: 20px;
+    padding-top: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#00bbd3), color-stop(15%, rgba(0, 187, 211, 0.5)), to(#fff));
+    background-image: linear-gradient(to bottom, #00bbd3, rgba(0, 187, 211, 0.5) 15%, #fff);
+  }
+  .auto__item:nth-child(2n) .auto__info,
+  .auto__item .auto__info {
+    width: 100%;
+  }
+  .auto__item:nth-child(2n) .auto__img,
+  .auto__item .auto__img {
+    margin: 0;
+    margin-top: -75px;
+  }
+  .auto__block {
+    margin-top: 120px;
+  }
+  .social a {
+    width: 40px;
+    height: 40px;
+  }
+  .social img {
+    width: 25px;
+  }
 }
