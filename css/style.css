@@ -1341,6 +1341,7 @@ label.order__text::after {
   .title-main {
     font-size: 30px;
     text-align: left;
+    max-width: 100%;
   }
   .order {
     width: 100%;
@@ -1348,6 +1349,7 @@ label.order__text::after {
   }
   .title {
     font-size: 26px;
+    max-width: 100%;
   }
   .company__item {
     width: 100%;
